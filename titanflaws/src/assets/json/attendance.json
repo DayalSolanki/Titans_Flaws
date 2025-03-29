@@ -1,0 +1,138 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "department": "Engineering",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:00 AM",
+      "checkOut": "05:00 PM"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "department": "Marketing",
+      "date": "2025-03-28",
+      "status": "Absent",
+      "checkIn": null,
+      "checkOut": null
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "department": "Sales",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:15 AM",
+      "checkOut": "05:10 PM"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "department": "Engineering",
+      "date": "2025-03-28",
+      "status": "Late",
+      "checkIn": "10:00 AM",
+      "checkOut": "06:00 PM"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Green",
+      "department": "HR",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "08:50 AM",
+      "checkOut": "05:00 PM"
+    },
+    {
+      "id": 6,
+      "name": "David White",
+      "department": "IT",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:10 AM",
+      "checkOut": "05:30 PM"
+    },
+    {
+      "id": 7,
+      "name": "Emily Adams",
+      "department": "Finance",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:05 AM",
+      "checkOut": "05:15 PM"
+    },
+    {
+      "id": 8,
+      "name": "Frank Wilson",
+      "department": "Engineering",
+      "date": "2025-03-28",
+      "status": "Absent",
+      "checkIn": null,
+      "checkOut": null
+    },
+    {
+      "id": 9,
+      "name": "Grace Miller",
+      "department": "Operations",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "08:55 AM",
+      "checkOut": "04:50 PM"
+    },
+    {
+      "id": 10,
+      "name": "Henry Turner",
+      "department": "Customer Support",
+      "date": "2025-03-28",
+      "status": "Late",
+      "checkIn": "10:30 AM",
+      "checkOut": "06:30 PM"
+    },
+    {
+      "id": 11,
+      "name": "Ivy Scott",
+      "department": "Marketing",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:20 AM",
+      "checkOut": "05:25 PM"
+    },
+    {
+      "id": 12,
+      "name": "Jack Lee",
+      "department": "Sales",
+      "date": "2025-03-28",
+      "status": "Absent",
+      "checkIn": null,
+      "checkOut": null
+    },
+    {
+      "id": 13,
+      "name": "Karen Evans",
+      "department": "HR",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:00 AM",
+      "checkOut": "05:00 PM"
+    },
+    {
+      "id": 14,
+      "name": "Leo Martinez",
+      "department": "IT",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "08:45 AM",
+      "checkOut": "04:55 PM"
+    },
+    {
+      "id": 15,
+      "name": "Mona Patel",
+      "department": "Finance",
+      "date": "2025-03-28",
+      "status": "Present",
+      "checkIn": "09:30 AM",
+      "checkOut": "05:45 PM"
+    }
+  ]
+  

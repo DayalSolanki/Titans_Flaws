@@ -1,0 +1,153 @@
+[
+    {
+      "sku": "#S001",
+      "productName": "Soy Sauce",
+      "category": "Condiment",
+      "quantity": 150,
+      "unitPrice": 1.50,
+      "totalValue": 225,
+      "supplier": "Supplier A",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#R002",
+      "productName": "Rice",
+      "category": "Grain",
+      "quantity": 200,
+      "unitPrice": 2.00,
+      "totalValue": 400,
+      "supplier": "Supplier B",
+      "stockStatus": "Out of Stock"
+    },
+    {
+      "sku": "#V003",
+      "productName": "Vinegar",
+      "category": "Condiment",
+      "quantity": 100,
+      "unitPrice": 2.50,
+      "totalValue": 250,
+      "supplier": "Supplier A",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#O004",
+      "productName": "Oil",
+      "category": "Condiment",
+      "quantity": 120,
+      "unitPrice": 2.20,
+      "totalValue": 264,
+      "supplier": "Supplier C",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#S005",
+      "productName": "Sugar",
+      "category": "Baking",
+      "quantity": 180,
+      "unitPrice": 1.80,
+      "totalValue": 324,
+      "supplier": "Supplier B",
+      "stockStatus": "Out of Stock"
+    },
+    {
+      "sku": "#F006",
+      "productName": "Flour",
+      "category": "Baking",
+      "quantity": 250,
+      "unitPrice": 1.20,
+      "totalValue": 300,
+      "supplier": "Supplier C",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#P007",
+      "productName": "Pasta",
+      "category": "Grain",
+      "quantity": 140,
+      "unitPrice": 2.00,
+      "totalValue": 280,
+      "supplier": "Supplier A",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#C008",
+      "productName": "Cereal",
+      "category": "Grain",
+      "quantity": 190,
+      "unitPrice": 3.00,
+      "totalValue": 570,
+      "supplier": "Supplier B",
+      "stockStatus": "Out of Stock"
+    },
+    {
+      "sku": "#T009",
+      "productName": "Tea",
+      "category": "Beverage",
+      "quantity": 130,
+      "unitPrice": 5.00,
+      "totalValue": 650,
+      "supplier": "Supplier A",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#C010",
+      "productName": "Coffee",
+      "category": "Beverage",
+      "quantity": 170,
+      "unitPrice": 4.50,
+      "totalValue": 765,
+      "supplier": "Supplier C",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#H011",
+      "productName": "Honey",
+      "category": "Sweetener",
+      "quantity": 90,
+      "unitPrice": 6.00,
+      "totalValue": 540,
+      "supplier": "Supplier B",
+      "stockStatus": "Out of Stock"
+    },
+    {
+      "sku": "#S012",
+      "productName": "Salt",
+      "category": "Seasoning",
+      "quantity": 160,
+      "unitPrice": 1.00,
+      "totalValue": 160,
+      "supplier": "Supplier A",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#B013",
+      "productName": "Butter",
+      "category": "Dairy",
+      "quantity": 110,
+      "unitPrice": 3.50,
+      "totalValue": 385,
+      "supplier": "Supplier C",
+      "stockStatus": "In Stock"
+    },
+    {
+      "sku": "#M014",
+      "productName": "Milk",
+      "category": "Dairy",
+      "quantity": 200,
+      "unitPrice": 1.50,
+      "totalValue": 300,
+      "supplier": "Supplier B",
+      "stockStatus": "Out of Stock"
+    },
+    {
+      "sku": "#C015",
+      "productName": "Cheese",
+      "category": "Dairy",
+      "quantity": 140,
+      "unitPrice": 4.00,
+      "totalValue": 560,
+      "supplier": "Supplier A",
+      "stockStatus": "In Stock"
+    }
+  ]
+  
