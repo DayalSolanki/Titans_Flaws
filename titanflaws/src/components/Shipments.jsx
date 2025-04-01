@@ -13,7 +13,7 @@ const Shipments = () => {
 
   // Fetch Data from JSON
   useEffect(() => {
-    fetch("/assets/json/shipment.json") // Adjust path based on project setup
+    fetch("shipment.json") // Adjust path based on project setup
       .then((response) => response.json())
       .then((data) => {
         console.log("Loaded Shipments Data:", data);
@@ -49,7 +49,7 @@ const Shipments = () => {
   };
 
   return (
-    <div style={{ padding: "20px", background: "#222", color: "#fff" }}>
+    <div  style={{marginTop:4, padding: "20px", background: "rgb(56, 56, 56)", color: "#fff" }}>
       <h2>Shipments</h2>
 
       {/* Filter Section */}

@@ -4,19 +4,18 @@ import { useNavigate } from "react-router-dom";
 import Banner from "../components/Banner"
 import Navbar from "../common/Navbar"
 
-const Home = () => {
+const AdminDashboard = () => {
   const navigate = useNavigate();
 
   const sections = [
     { label: "Inventory", path: "/inventory" },
     { label: "Shipping", path: "/shipping" },
-    { label: "Salary/Fee", path: "/salary-fee" },
+    { label: "Register Worker", path: "/manage-workers" },
     { label: "Attendance", path: "/attendance" }
   ];
 
   return (
-    <div style={{ padding: "20px", background: "#880890", height: "auto" }}>
-      <Navbar/>
+    <div style={{ padding: "20px", background: "", height: "auto" }}>
       <Banner/>
       <Grid container spacing={3} justifyContent="center" marginTop={4}>
         {sections.map((section, index) => (
@@ -26,7 +25,7 @@ const Home = () => {
               style={{
                 padding: "30px",
                 textAlign: "center",
-                background: "#d3d3d3",
+                background: "#0a2540",
                 cursor: "pointer"
               }}
               onClick={() => navigate(section.path)}
@@ -42,4 +41,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AdminDashboard;

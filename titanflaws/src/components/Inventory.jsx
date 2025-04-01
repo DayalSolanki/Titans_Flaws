@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, TextField, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography, Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import inventoryData from "../assets/json/inventory.json";
 
 const Inventory = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -9,12 +8,15 @@ const Inventory = () => {
   const [dateFilter, setDateFilter] = useState("All");
 
   useEffect(() => {
-    setFilteredData(inventoryData);
+    fetch("http://localhost:5000/api/inventory")
+      .then((response) => response.json())
+      .then((data) => setFilteredData(data))
+      .catch((error) => console.error("Error fetching inventory data:", error));
   }, []);
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
-    const filtered = inventoryData.filter((item) =>
+    const filtered = filteredData.filter((item) =>
       item.productName.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setFilteredData(filtered);
@@ -24,16 +26,19 @@ const Inventory = () => {
     setDateFilter(filter);
     // Mock filtering based on date (adjust logic as needed)
     if (filter === "Today") {
-      setFilteredData(inventoryData.slice(0, 2));
+      setFilteredData(filteredData.slice(0, 2));
     } else if (filter === "This week") {
-      setFilteredData(inventoryData.slice(0, 4));
+      setFilteredData(filteredData.slice(0, 4));
     } else {
-      setFilteredData(inventoryData);
+      fetch("http://localhost:5000/api/inventory")
+        .then((response) => response.json())
+        .then((data) => setFilteredData(data))
+        .catch((error) => console.error("Error fetching inventory data:", error));
     }
   };
 
   return (
-    <Container>
+    <Container maxWidth="md" sx={{ bgcolor: "rgb(121, 119, 119)", color: "#fff", p: 3, borderRadius: 2, marginTop:2 }}>
       <Typography variant="h4" gutterBottom>Inventory</Typography>
       <TextField
         fullWidth
@@ -49,7 +54,7 @@ const Inventory = () => {
         <Button variant={dateFilter === "Today" ? "contained" : "outlined"} onClick={() => handleDateFilter("Today")}>Today</Button>
         <Button variant={dateFilter === "This week" ? "contained" : "outlined"} onClick={() => handleDateFilter("This week")}>This week</Button>
         <Button variant={dateFilter === "Custom" ? "contained" : "outlined"} onClick={() => handleDateFilter("Custom")}>Custom</Button>
-        <Button variant="contained" onClick={() => setFilteredData(inventoryData)}>Refresh Data</Button>
+        <Button variant="contained" onClick={() => handleDateFilter("All")} >Refresh Data</Button>
       </Box>
 
       <TableContainer component={Paper}>

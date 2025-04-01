@@ -3,7 +3,6 @@ import React from "react";
 import { Box, Button, TextField, Typography, Link } from "@mui/material";
 
 const LoginPage = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -69,14 +68,16 @@ const LoginPage = () => {
           sx={{ backgroundColor: "white", borderRadius: 1, mb: 2 }}
           onChange={(e)=>setPassword(e.target.value)}
         />
-        {error && <p color="red">{error}</p>}
+        {error && <Typography color="red">{error}</Typography>}
         <Link href="#" color="inherit" sx={{ display: "block", mb: 2 }}>
           Forget Password
         </Link>
-        <Button fullWidth variant="contained" sx={{ backgroundColor: "green", mb: 2 }} onSubmit={handleSubmit} >
+        <Button fullWidth variant="contained" sx={{ backgroundColor: "green", mb: 2 }} onClick={handleSubmit}>
           Sign in
         </Button>
-        
+        <Typography variant="body2" sx={{ textAlign: "center" }}>
+          Don't have an account? <Link href="/registration" color="inherit">Register here</Link>
+        </Typography>
       </Box>
     </Box>
   );

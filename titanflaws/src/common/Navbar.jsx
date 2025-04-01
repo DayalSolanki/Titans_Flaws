@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, IconButton, Typography, Box, TextField, InputAdornment, Drawer, List, ListItem, ListItemText } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Toolbar, IconButton, Typography, Box, TextField, InputAdornment, Drawer, List, ListItem, ListItemText, Avatar } from "@mui/material";
+
 import SearchIcon from "@mui/icons-material/Search";
-import EmailIcon from "@mui/icons-material/Email";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,9 +9,7 @@ const Navbar = () => {
   const menuItems = [
     { text: "My profile", path: "/MyProfile" },
     { text: "Settings", path: "/settings" },
-    { text: "Blog", path: "/blog" },
-    { text: "About Us", path: "/about" },
-    { text: "Contact Us", path: "/contact" },
+    { text: "Any Query", path: "/contact" },
   ];
 
   return (
@@ -47,7 +44,7 @@ const Navbar = () => {
 
           {/* Right: Menu Icon */}
           <IconButton color="inherit" onClick={() => setMenuOpen(true)}>
-            <MenuIcon />
+            <Avatar src="/path-to-avatar.jpg" alt="User Avatar" />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -61,11 +58,9 @@ const Navbar = () => {
               <ListItemText primary={text} sx={{ color: "white" }} />
             </ListItem>
           ))}
-          <ListItem>
-            <EmailIcon sx={{ marginRight: 1, color: "white" }} />
-            <Typography variant="body2">titanflaws365@gmail.com</Typography>
-          </ListItem>
+
         </List>
+        <Typography variant="body2">titanflaws365@gmail.com</Typography>
       </Box>
     </Drawer>
     </>
