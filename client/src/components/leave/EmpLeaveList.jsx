@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
 import { useAuth } from '../../context/AuthContext';
@@ -7,7 +7,7 @@ const EmpLeaveList = () => {
     const {user} = useAuth()
     const [leaves, setLeaves] = useState(null)
     let sno = 1
-    const {id} = useParams()
+    const id = user?._id;
 
     const fetchLeaves = async() =>{
         try {

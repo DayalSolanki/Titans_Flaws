@@ -39,7 +39,7 @@ const AddDepartment = () => {
         <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="dep_name" className='text-sm font-medium text-gray-700'>Department Name</label>
-                <input type='text' placeholder='enter Dep Name' onChange={handleChange}
+                <input type='text' name='dep_name' placeholder='enter Dep Name' onChange={handleChange}
                     className='mt-1 w-full p-2 border border-gray-300 rounded-md' required/>
             </div>
             <div className='mt-3'>

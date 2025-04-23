@@ -28,7 +28,7 @@ const Departments = () => {
             _id: dep._id,
             sno: sno++,
             dep_name: dep.dep_name,
-            action: (<DepartmentButtons _id={dep_id} onDepartmentDelete={onDepartmentDelete}/>)
+            action: (<DepartmentButtons _id={dep._id} onDepartmentDelete={onDepartmentDelete}/>)
           }
         ))
         setDepartments(data);
@@ -61,11 +61,11 @@ const Departments = () => {
           <h3 className='text-2xl font-bold'>Manage Department</h3>
         </div>
         <div className='flex justify-between items-center'>
-          <input onChange={filterDepartments} type='text' placeholder='Search for department' className='px-4 py-0.5' />
+          <input onChange={filterDepartments} type='text' placeholder='Search for department' className='px-4 py-0.5 border border-gray-600 ' />
           <Link to='/admin_dashboard/add_department' className='px-4 py-1 bg-teal-600 rounded text-white'>
           Add New Department</Link>
         </div>
-        <div>
+        <div className='mt-10'>
           <DataTable columns={columns} data={filteredDepartments} pagination/>
         </div>
       </div>

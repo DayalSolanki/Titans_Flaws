@@ -7,7 +7,7 @@ const Sidebar = () => {
     const {user} = useAuth()
 
   return (
-    <div className='bg-grey-800 text-white h-screen fixed left-0 top-0 bottom-0 space-y-2 w-64'>
+    <div className='bg-grey-800 text-black h-screen fixed left-0 top-0 bottom-0 space-y-2 w-64'>
         <div className='bg-teal-600 h-12 flex items-center justify-center'>
             <h3 className='text-2xl text-center'>TitansFlaws</h3>
         </div>

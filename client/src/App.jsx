@@ -24,9 +24,9 @@ import EmployeeLeaveDetails from './components/leave/EmployeeLeaveDetails.jsx'
 function App() {
 
   return (
-      <div className='text-3xl text-teal-500'>
+      <div className='text-xl text-teal-500'>
           <Routes>
-            {/* <Route path='/' element={<Navigate to="/admin-dashboard"/>} /> */}
+            <Route path='/admin_dashboard' element={<AdminDashboard/>}/>
             <Route path='/login' element={<Login/>} />
             <Route path='/admin_dashboard' element={
               <PrivateRoutes>
@@ -40,7 +40,7 @@ function App() {
                 <Route path='/admin_dashboard/add_department' element={<AddDepartment/>}/>
                 <Route path='/admin_dashboard/department/:id' element={<EditDepartment/>}/>
                 <Route path='/admin_dashboard/employees' element={<List/>}/>
-                <Route path='/admin_dashboard/add_employees' element={<Add/>}/>
+                <Route path='/admin_dashboard/add_employee' element={<Add/>}/>
                 <Route path='/admin_dashboard/employees/:id' element={<View/>}/>
                 <Route path='/admin_dashboard/employees/edit/:id' element={<Edit/>}/>
                 <Route path='/admin_dashboard/salary/add' element={<AddSalary/>}/>   

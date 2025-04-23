@@ -142,7 +142,7 @@ const Add = () => {
                 <div>
                 <label className='block text-sm font-medium text-gray-700'>Upload Image</label>
                     <input onChange={handleChange} type="file" name='image' placeholder='Upload Image' 
-                     className='mt-1 p-2 block w-full border border-gray-300 rounded-md' required/>
+                     className='mt-1 p-2 block w-full border border-gray-300 rounded-md' />
                 </div>
             </div>
             <button type='submit' className='w-full mt-6 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md'>

@@ -8,9 +8,9 @@ const AdminHandleLeave = () => {
     const [filteredLeaves, setFilteredLeaves] = useState(null)
 
     const fetchLeaves = async() =>{
-        setEmpLoading(true)
+        // setEmpLoading(true)
       try {
-        const response = await axios.get('http://localhost:5000/api/leaves',{
+        const response = await axios.get('http://localhost:5000/api/leave',{
           headers: {
             "Authorization" : `Bearer ${localStorage.getItem('token')}`
           }

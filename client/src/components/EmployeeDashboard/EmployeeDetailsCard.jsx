@@ -7,7 +7,7 @@ const DetailsCard = () => {
   return (
     <div className='p-6'>
         <div className='rounded flex bg-white'>
-            <div className={`text-3xl flex justify-center items-center ${color} text-white px-4`}>
+            <div className={`text-3xl flex justify-center items-center text-white px-4`}>
                 <FaUser/>
             </div>
             <div className='pl-4 py-1'>
